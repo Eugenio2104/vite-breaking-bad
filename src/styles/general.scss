@@ -1,0 +1,9 @@
+@use './partials/vars' as *;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/@fountsource/montserrat/index.css';
+
+body {
+  font-family: $main-font;
+  background-color: $primary-color;
+}
