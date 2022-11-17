@@ -8,8 +8,12 @@ export default {
 </script>
 
 <template>
-  <div class="eb-card">
-    {{ character.name }}
+  <!-- name, category, status -->
+  <div class="card col-2 text-center">
+    <img :src="character.img" :alt="character.name" />
+    <h6>{{ character.name }}</h6>
+    <p>{{ character.category }}</p>
+    <p>{{ character.status }}</p>
   </div>
 </template>
 
