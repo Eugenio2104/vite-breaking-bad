@@ -23,8 +23,8 @@ export default {
       axios
         .get(store.apiUrl)
         .then((result) => {
-          store.charactersList = result.data;
-          console.log(store.charactersList);
+          store.charactersListData = result.data;
+          console.log(store.charactersListData);
         })
         .catch((error) => {
           console.log(error);
@@ -32,7 +32,7 @@ export default {
     },
   },
   mounted() {
-    this.getCharacters;
+    this.getCharacters();
   },
 };
 </script>
