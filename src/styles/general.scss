@@ -4,6 +4,7 @@
 @import 'node_modules/@fountsource/montserrat/index.css';
 
 body {
+  min-height: 100vh;
   font-family: $main-font;
   background-color: $primary-color;
 }
