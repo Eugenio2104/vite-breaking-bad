@@ -19,4 +19,12 @@ export default {
 
 
 <style lang="scss" scoped>
+h6 {
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+p {
+  color: gray;
+  font-size: 0.9rem;
+}
 </style>
