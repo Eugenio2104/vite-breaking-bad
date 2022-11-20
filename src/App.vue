@@ -23,7 +23,7 @@ export default {
       axios
         .get(store.apiUrl, {
           params: {
-            category: store.categorySearch,
+            category: store.categoryToSearch,
           },
         })
         .then((result) => {
