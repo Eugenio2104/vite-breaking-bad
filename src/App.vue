@@ -21,7 +21,11 @@ export default {
   methods: {
     getCharacters() {
       axios
-        .get(store.apiUrl)
+        .get(store.apiUrl, {
+          params: {
+            category: store.categorySearch,
+          },
+        })
         .then((result) => {
           store.charactersListData = result.data;
           console.log(store.charactersListData);
@@ -40,7 +44,7 @@ export default {
 <template>
   <AppHeader title="Breaking Bad Api" />
   <main>
-    <AppSearch />
+    <AppSearch @startSearch="getCharacters()" />
     <CharacterList />
   </main>
 </template>

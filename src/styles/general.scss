@@ -19,9 +19,16 @@ body {
 
 img {
   width: 100%;
+
 }
 
 .card {
   background-color: $primary-color;
   margin: 19px;
+  cursor: pointer;
+  transition: all .1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
